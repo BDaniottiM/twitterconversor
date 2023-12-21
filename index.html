@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Conversor de URL</title>
+    <style>
+        /* Estilos para o formulário */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            background-color: #f4f4f4;
+        }
+        h2 {
+            color: #333;
+        }
+        #converterForm {
+            width: 500px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        #urlInput {
+	    text-align: center;
+            padding: 8px;
+            width: 90%;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        #convertButton {
+            padding: 10px 20px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+        }
+        #convertButton:hover {
+            background-color: #45a049;
+        }
+        #convertedURL {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Conversor de URL</h2>
+    <div id="converterForm">
+        <input type="text" id="urlInput" placeholder="Insira o URL">
+        <br>
+        <button onclick="converterURL()" id="convertButton">Converter</button>
+        <div id="convertedURL"></div>
+    </div>
+
+    <script>
+        function converterURL() {
+            var inputURL = document.getElementById('urlInput').value;
+            var convertedURL = inputURL.replace('x.com', 'fxtwitter.com');
+            document.getElementById('convertedURL').innerText = convertedURL;
+        }
+    </script>
+
+</body>
+</html>
