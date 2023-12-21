@@ -22,7 +22,7 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         #urlInput {
-	    text-align: center;
+            text-align: center;
             padding: 8px;
             width: 90%;
             margin-bottom: 15px;
@@ -59,7 +59,7 @@
     <script>
         function converterURL() {
             var inputURL = document.getElementById('urlInput').value;
-            var convertedURL = inputURL.replace('x.com', 'fxtwitter.com');
+            var convertedURL = inputURL.replace(/(x\.com|twitter\.com)/g, 'fxtwitter.com');
             document.getElementById('convertedURL').innerText = convertedURL;
         }
     </script>
