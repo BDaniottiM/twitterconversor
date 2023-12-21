@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Conversor de URL</title>
+    <title>Conversor Twitter</title>
     <link rel="icon" href="src/twitter.png" type="image/png">
     <style>
         /* Estilos para o formulário */
@@ -45,17 +45,29 @@
             margin-top: 20px;
             font-weight: bold;
         }
+	#footer {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            text-align: center;
+            font-size: 14px;
+            color: #777;
+            padding: 10px;
+      	}
     </style>
 </head>
 <body>
 
-    <h2>Conversor de URL</h2>
+    <h2>Conversor</h2>
+    <h3>Esse site converte twitter.com/x.com para fxtwitter.com</h3>
     <div id="converterForm">
         <input type="text" id="urlInput" placeholder="Insira o URL">
         <br>
         <button onclick="converterURL()" id="convertButton">Converter</button>
         <div id="convertedURL"></div>
     </div>
+    <div id="footer">Site produzido por Bruno Daniotti Miranda</div>
 
     <script>
         function converterURL() {
