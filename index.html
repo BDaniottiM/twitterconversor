@@ -18,46 +18,47 @@
             color: #333;
         }
         #converterForm {
-            width: 45%;
-            margin: 0 auto;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            display: inline-block;
-        }
+    width: 45%;
+    margin: auto;
+    background-color: #fff;
+    padding: 2%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: block;
+}
         #urlInput {
-    	    text-align: center;
-	    padding: 8px;
-            width: 90%;
-            margin: 15px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            display: flex;
-        }
+    text-align: center;
+    padding: 8px;
+    width: 80%;
+    margin: 2%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: inline;
+}
         #convertButton {
-            padding: 10px 20px;
-            cursor: pointer;
-            background-color: #02a7f2;
-            color: white;
-            border: none;
-            border-radius: 4px;
-        }
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #02a7f2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+margin-top: 2%;
+}
         #convertButton:hover {
             background-color: #007acc;
         }
         #convertedURL {
-            font-weight: bold;
-            color: #02a7f2; /* Altera a cor para indicar que é um link clicável */
-            cursor: pointer; /* Muda o cursor para indicar que é clicável */
-            text-decoration: underline; /* Sublinhado para indicar que é um link */
-            position: relative; /* Posição relativa para exibir o tooltip */
-            font-size: 14px;
-            max-width: 90%; /* Limita o tamanho do texto do link convertido */
-            display: inline-block;
-            margin-top: 10px;
-        }
+    font-weight: bold;
+    color: #02a7f2;
+    cursor: pointer;
+    text-decoration: underline;
+    position: relative;
+    font-size: 14px;
+    max-width: 100%;
+    display: inline-block;
+    margin-top: 2%;
+}
         #tooltip {
             visibility: hidden;
             width: 120px;
@@ -81,7 +82,7 @@
         #copiedNotification {
             display: none;
             color: #02a7f2;
-            margin-top: 10px;
+            margin-top: 2%;
         }
         #footer {
             position: absolute;
@@ -118,7 +119,7 @@
             var convertedText = document.getElementById('convertedText');
             var convertedURLDiv = document.getElementById('convertedURL');
             convertedText.innerText = convertedURL; // Define o texto do link convertido
-            convertedURLDiv.style.display = 'inline-block'; // Torna o link visível
+            convertedURLDiv.style.display = 'block'; // Torna o link visível
         }
 
         document.getElementById('convertedURL').addEventListener('click', function() {
